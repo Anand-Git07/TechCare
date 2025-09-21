@@ -1,57 +1,115 @@
-# TechCare
+# 🌟 TechCare 
+
+TechCare is a mental health AI-powered chat assistant that guides and helps users improve their mental wellbeing. It provides a user-friendly interface to **learn, track, and enhance mental health**.  
 
 
 
-Features
-AI chat assistant to take guidance about mental health.
-Analyse your mental health over a period of time.
-Get an Indication about your mental health condition with a graphical visualization.
-Editor's compiled articles to read and educate about mental health problems.
-Get emails from time to time with suggestions to improve your mental health.
-Tech
-System Design
-MindMate application runs on 4 server
+## ✨ Features
 
-Frontend
-Backend
-WebSocket Server
-Email Server des
-Tech stack
-Frontend
-React JS
-Tailwind
-Backend
-Node Js
-Express Js
-Gemini (Gen AI)
-Web Sockets
-Node Mailer
-Tools
-Vercel
-Render
-Mongo DB
-Firebase
-How to Setup Locally?
-Firebase Setup
-Setup a new Firebase project
-Add a Web App
-Go to Authentication -> Sign-in Method
-Enable Email/Password, Gmail as Provider
-Go to the Project Settings of Web App and get your firebaseConfig object
-Create .env in Frontend folder and add firebaseConfig as per .env.sample file
-In the service accounts section, Generate new private key (json object).
-Create .env in Backend folder and add new private key as per .env.sample file
-Fill rest .env as per .env.sample files
-Gemini Setup
-Get your Gemini (by Google) API_KEY from (https://ai.google.dev) and put in Backend .env as per .env.sample
-MongoDB Setup
-Create a MongoDB Atlas (https://www.mongodb.com) account and get your URI and put in Backend .env as per .env.sample
-Create Connection amongst Servers
-Put Url for Websocketserver in Backend .env (ex- WEBSOCKET_SERVER=ws://localhost:8802)
-Put Url for Backend and Websocketserver in Frontend .env (ex- REACT_APP_API_LINK=http://localhost:8800 and REACT_APP_WS_LINK=ws://localhost:8802)
-Scripts to Install and Run
-Need to have Node.js installed
-Go to the Backend, Frontend, Websockerserver folder seperately and run for each npm install
-Run Backend by, npm run dev or npm start
-Run Frontend by, npm start
-Run Websocketserver by, node index.js
+- 🤖 **AI chat assistant** for guidance on mental health.  
+- 📊 **Analyze your mental health** over time.  
+- 📈 **Graphical visualization** of mental health conditions.  
+- 📚 **Curated articles** to educate about mental health problems.  
+- 📧 **Periodic email suggestions** to improve mental wellbeing.  
+
+---
+
+## 🛠 Tech Stack
+
+### Frontend
+- React JS  
+- Tailwind CSS  
+
+### Backend
+- Node.js  
+- Express.js  
+- Gemini (Google Gen AI)  
+- WebSockets  
+- NodeMailer  
+
+### Tools & Platforms
+- Vercel (Frontend deployment)  
+- Render (Backend & WebSocket server deployment)  
+- MongoDB Atlas (Database)  
+- Firebase (Authentication & services)  
+
+---
+
+## 🏗 System Design
+
+MindMate runs on **4 servers**:  
+
+<details>
+<summary>Click to expand</summary>
+
+1. Frontend Server  
+2. Backend Server  
+3. WebSocket Server  
+4. Email Server  
+
+</details>
+
+---
+
+## ⚡ Setup Locally
+
+<details>
+<summary>Firebase Setup</summary>
+
+1. Create a new Firebase project.  
+2. Add a Web App.  
+3. Go to Authentication → Sign-in Method, enable Email/Password and Gmail.  
+4. Copy firebaseConfig from Project Settings → Web App.  
+5. Create .env in Frontend folder and add the config (see .env.sample).  
+6. In Service Accounts, generate a private key (JSON) and add it to Backend .env.  
+
+</details>
+
+<details>
+<summary>Gemini Setup</summary>
+
+- Get your Gemini API_KEY from https://ai.google.dev and add it to Backend .env.  
+
+</details>
+
+<details>
+<summary>MongoDB Setup</summary>
+
+1. Create a MongoDB Atlas account: https://www.mongodb.com.  
+2. Get your URI and add it to Backend .env.  
+
+</details>
+
+<details>
+<summary>Connecting Servers</summary>
+
+- Add the WebSocket server URL in Backend .env:  
+  WEBSOCKET_SERVER=ws://localhost:8802
+
+- Add Backend and WebSocket server URLs in Frontend .env:  
+  REACT_APP_API_LINK=http://localhost:8800  
+  REACT_APP_WS_LINK=ws://localhost:8802  
+
+</details>
+
+---
+
+## 🚀 Install & Run
+
+> Prerequisite: Node.js installed
+
+# Go to Backend, Frontend, and WebSocketServer folders separately
+npm install
+
+# Run Backend
+npm run dev
+
+# Run Frontend
+npm start
+
+# Run WebSocket Server
+node index.js
+
+---
+
+✅ techcare makes mental health support simple, interactive, and data-driven!
